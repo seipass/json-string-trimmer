@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-string-trimmer"
+version = "1.0.0"
+description = "Trim whitespace from every string value recursively."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "seipass"}]
+
+[project.scripts]
+json-string-trimmer = "json_string_trimmer:main"
+
+[tool.setuptools]
+py-modules = ["json_string_trimmer"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
